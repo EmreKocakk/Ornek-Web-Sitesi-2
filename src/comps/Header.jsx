@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo.svg'
+import logo from '/images/logo.svg'
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import '../css/Header.css'

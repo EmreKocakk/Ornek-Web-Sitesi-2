@@ -1,0 +1,100 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.main {
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+.card {
+    width: 22.5rem;
+    height: 10rem;
+    background-color: #575C69;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.card.on {
+    background-color: white;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    height: 4.5rem;
+}
+
+.generic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generic button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-1 {
+    transition: all 0.5s;
+}
+
+.btn-1:hover {
+    background-color: tomato;
+}
+
+.btn-1.on {
+    color: black;
+}
+
+.toggle {
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+.toggle.on {
+    background-color: tomato;
+}
+
+.knob {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.5s;
+}
+
+.toggle.on .knob {
+    left: 28px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 17rem;
+        height: 10rem;
+    }
+}

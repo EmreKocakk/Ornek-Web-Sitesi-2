@@ -1,0 +1,46 @@
+.section-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.section-1 h3{
+    font-size: 1.5rem;
+}
+.s-h3.on{
+    color: black;
+}
+.section-1 button{
+   padding: 0.7rem;
+   background-color: rgba(211, 211, 211, 0.3);
+   border: none;
+   border-radius: 1rem;
+   color: white;
+   cursor: pointer;
+   transition: all 0.5s;
+}
+.section-1 button:hover{
+    background-color: tomato;
+}
+
+.section-1 .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.6rem;
+}
+.btn.on{
+    color: black;
+}
+
+
+@media (max-width: 480px){
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+}

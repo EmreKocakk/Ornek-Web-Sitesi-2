@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.app{
+    height: auto;
+    background-color: #ECF5FC;
+    padding-bottom: 4rem;
+}
+.app.dark{
+    background: linear-gradient(to bottom, #050A1E, #0A1540 );
+}
+.app-wrap{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+@media (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    .app{
+        height: auto;
+    }
+    .app-wrap{
+        width: 70%;
+        margin: auto;
+    }
+}
